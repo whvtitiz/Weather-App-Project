@@ -20,6 +20,9 @@ li {
   line-height: 1px;
   list-style: none;
 }
+p {
+  text-align: center;
+}
 .weather-app {
   border: 1px solid rgb(199, 195, 195);
   padding: 15px;
