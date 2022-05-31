@@ -10,15 +10,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <script src="src/index.js"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
-        <form class="search-form" id="search-form">
+        <form class="mb-3" id="search-form">
           <div class="row">
             <div class="col-6">
               <input
@@ -34,27 +34,29 @@
               <input
                 type="submit"
                 value="Search"
-                class="form-control btn btn-secondary"
+                class="form-control btn btn-outline-secondary w-100"
               />
             </div>
             <div class="col-3">
-              <button class="btn btn-success w-100" id="current-location-button">
+              <button class="btn btn-secondary w-100" id="current-location-button">
                 Current
               </button>
           </div>
+          </div>
         </form>
-
+        <div class="overview">
         <h1 id="city"></h1>
         <ul>
-          <li id="date"></li>
+          <li>last updated: <span id="date"></span></li>
           <li id ="description"></li>
         </ul>
+      </div>
         <div class="row">
           <div class="col-9">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
+              <img src="" alt="sunny" id="icon" class="float-left" />
               <div class="float-left">
-                <span class="temperature" id="temperature"></span
-                ><span class="units">°F</span>
+                <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
               </div>
             </div>
           </div>
@@ -64,8 +66,9 @@
             <ul>
               <li>Precipitation: 78%</li>
               <li>Humidity: <span id= "humidity"></span>%</li>
-              <li>Wind: <span id= "wind"></span>mph</li>
+              <li>Wind: <span id= "wind"></span>km/h</li>
             </ul>
+            </div>
             <div
               class="btn-group"
               role="group"
@@ -80,13 +83,15 @@
               <button type="button" class="btn btn-outline-secondary">
                 Wind
               </button>
-            </div>
           </div>
         </div>
       </div>
     </div>
    <p>
  <a href="https://github.com/whvtitiz/Weather-App-Project">Open-source code</a> by Whitney Wiles </p>
-  </body>
+ </div>
+</div>
+ <script src="src/index.js"></script>
+</body>
 </html>
 
