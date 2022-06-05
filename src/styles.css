@@ -75,9 +75,9 @@ p {
   margin-top: 16px;
   opacity: 0.6;
 }
-.weather-forecast-date {
+.weather-forecast-temperatures {
   font-size: 13px;
 }
-.weather-forecast-date-min {
+.weather-forecast-temperature-min {
   opacity: 0.5;
 }
