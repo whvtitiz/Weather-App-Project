@@ -51,18 +51,12 @@ p {
   font-weight: 400;
   line-height: 1;
 }
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;
 }
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
+
 .search-form {
   margin-bottom: 30px;
 }
